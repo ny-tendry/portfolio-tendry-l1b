@@ -1,0 +1,39 @@
+@mixin fontStyle($fs, $lh, $fw, $color, $isUppercase) {
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+    color: $color;
+    @if $isUppercase {
+        text-transform: uppercase;
+    }@else {
+        text-transform: lowercase;
+    }
+}
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == "big-size" {
+        @media screen and (max-width : $big-size){
+            @content;
+        }
+    }
+    @else if $breakpoint == "xlarge" {
+        @media screen and (max-width : $xlarge){
+            @content;
+        }
+    }
+    @else if $breakpoint == "large" {
+        @media screen and (max-width : $large){
+            @content;
+        }
+    }
+    @else if $breakpoint == "pad" {
+        @media screen and (max-width : $tablette){
+            @content;
+        }
+    }
+}
+@mixin option($h, $d, $jf, $ai) {
+    height:$h;
+    display: $d;
+    justify-content: $jf;
+    align-items: $ai;
+}

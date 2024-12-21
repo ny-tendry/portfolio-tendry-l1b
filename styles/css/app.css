@@ -1,0 +1,142 @@
+@charset "UTF-8";
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+  color: rgb(51, 15, 67);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  color: rgb(27, 25, 29);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.contenu {
+  font-size: 1rem;
+  color: rgb(112, 96, 112);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body main {
+  margin-left: 230px;
+  padding: 0 25px;
+  height: 400vh;
+  margin-top: -1.3rem;
+  background-image: url(./photo/fond.jpg) no-repeat;
+}
+body main#Biographie {
+  border: solid 1px;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ensemble {
+  background-image: url(./photo/fond.jpg) no-repeat;
+}
+
+#Biographie {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Compétences {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Expériences {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.element-slide_wrapper {
+  display: inline-block;
+  margin: 1em;
+  width: 300px;
+  border: 1px solid red;
+  padding: 0px 20px;
+}
+.element-slide_wrapper img {
+  display: block;
+  width: 100%;
+}
+.element-slide_wrapper .content {
+  background: rgb(202, 202, 202);
+  width: 0;
+  width: 100%;
+}
+.element-slide_wrapper .content p {
+  margin: 0;
+  padding: 0;
+}
+
+.bloc-navigation {
+  background-color: rgb(51, 15, 67);
+  width: 230px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.bloc-navigation .pdp {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bloc-navigation .pdp img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.bloc-navigation ul {
+  margin-top: 25px;
+}
+.bloc-navigation ul li {
+  height: 40px;
+}
+.bloc-navigation ul li:not(:first-child) {
+  margin-top: 25px;
+}
+.bloc-navigation ul li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: rgb(222, 208, 235);
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    main {
+        margin-left: 230px;
+        padding: 0 25px;
+        height: 400vh;
+        margin-top: -1.3rem;
+        background-image: url(./photo/fond.jpg)     no-repeat;
+       
+        &#Biographie{
+            border: solid 1px;
+            height: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+    }
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+#Biographie{
+    @include option(100vh, flex, center, center);
+    
+}
+
+#Compétences{
+    @include option(100vh, flex, center, center);
+    line-height: 5rem;
+}
+
+#Expériences{
+    @include option(100vh, flex, center, center);
+}
+
+#Contact{
+    @include option(100vh, flex, center, center);
+}
+
+
+
